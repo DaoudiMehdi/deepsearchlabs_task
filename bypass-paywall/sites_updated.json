@@ -1,0 +1,71 @@
+{
+  "Berliner Zeitung (removed)": {
+    "domain": "berliner-zeitung.de",
+    "allow_cookies": 1,
+    "nofix": 1,
+    "upd_version": "4.1.8.1"
+  },
+  "Diário de Notícias (dn.pt)": {
+    "domain": "dn.pt",
+    "allow_cookies": 1,
+    "ld_json": "div#metered-paywall-banner|div.paywall",
+    "upd_version": "4.1.7.7"
+  },
+  "FocusPlus.de": {
+    "domain": "focusplus.de",
+    "allow_cookies": 1,
+    "block_regex": "\\.piano\\.io\\/xbuilder\\/experience\\/execute",
+    "upd_version": "4.1.7.8"
+  },
+  "Groupe Rossel": {
+    "domain": "###_fr_be_groupe_rossel",
+    "group": [
+      "aisnenouvelle.fr",
+      "courrier-picard.fr",
+      "lardennais.fr",
+      "lavoixdunord.fr",
+      "lemessager.fr",
+      "lesoir.be",
+      "lest-eclair.fr",
+      "liberation-champagne.fr",
+      "lunion.fr",
+      "nordlittoral.fr",
+      "paris-normandie.fr",
+      "sudinfo.be"
+    ],
+    "allow_cookies": 1,
+    "block_regex": "\\.qiota\\.com",
+    "cs_dompurify": 1,
+    "cs_param": {"article_sel": "article.r-article > r-article--section, div.r-content, div#article_paywall_es, div.qiota_reserve"},
+    "upd_version": "4.1.8.5"
+  },
+  "Stylist.co.uk": {
+    "domain": "stylist.co.uk",
+    "allow_cookies": 1,
+    "cs_code": "[{\"cond\":\"div.paywall--inline\", \"rm_attrib\":\"class\"}]",
+    "cs_dompurify": 1,
+    "upd_version": "4.1.7.2"
+  },
+  "The Atlanta Journal-Constitution": {
+    "domain": "ajc.com",
+    "allow_cookies": 1,
+    "block_regex": "(\\.piano\\.io\\/xbuilder\\/experience\\/execute|\\.cxense\\.com\\/)",
+    "useragent": "googlebot",
+    "cs_code": "[{\"cond\":\"div.story-paygate_placeholder\", \"rm_attrib\":\"class\"}]",
+    "upd_version": "4.1.7.4"
+  },
+  "The New World (UK)": {
+    "domain": "thenewworld.co.uk",
+    "allow_cookies": 1,
+    "block_regex": "cdn\\.tinypass\\.com",
+    "cs_code": "[{\"cond\":\"div[data-show-fade-on-noaccess]\", \"rm_elem\":1, \"elems\": [{\"cond\":\"div[data-show-has-access]\", \"rm_attrib\":\"data-show-has-access\"}]}]",
+    "upd_version": "4.1.7.4"
+  },
+  "The Washington Post": {
+    "domain": "washingtonpost.com",
+    "allow_cookies": 1,
+    "block_regex": "\\.washingtonpost\\.com\\/.+\\/tetro-client\\/",
+    "useragent": "googlebot",
+    "upd_version": "4.1.8.2"
+  }
+}

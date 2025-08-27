@@ -1,0 +1,11 @@
+pandas
+numpy
+pymongo
+selenium
+selenium-stealth
+schedule
+matplotlib
+seaborn
+wordcloud
+nltk
+google-generativeai
